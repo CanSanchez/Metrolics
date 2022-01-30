@@ -86,6 +86,128 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------------
+ NAVIGATION BAR 
+ --------------------------------------------------------------------------*/
+
+.page-header {
+  display: flex;
+  width: 80em;
+  height: 10em;
+}
+
+.main-nav {
+  display: flex;
+  width: 70em;
+  height: 10em;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  width: 10em;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3em 1em .5em 1em;
+}
+
+.btn::after {
+  content: " ";
+  display: block;
+  background-color: rgb(63, 209, 63);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.7em;
+  z-index: -1;
+}
+
+.btn::before {
+  content: " ";
+  display: block;
+  background-color: green;
+  width: 12em;
+  height: 10.5em;
+  position: absolute;
+  top: 0em;
+  z-index: -1;
+}
+
+.btn p {
+  align-self: flex-start;
+  margin: 5em 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.btn i {
+  margin: 2em 0 0 0;
+}
+
+.fas {
+  color: white
+}
+
+/* HOME BUTTON */
+.btn-home::before {
+  background-color: #25c389;
+}
+.btn-home::after {
+  background-color: #56caa3;
+}
+
+/* PAGE BUTTON */
+.btn-pages::before {
+  background-color: #ffb901;
+}
+.btn-pages::after {
+  background-color: #ffc634;
+}
+
+/* BLOG BUTTON */
+.btn-blog::before {
+  background-color: #de6262;
+}
+.btn-blog::after {
+  background-color: #e78383;
+}
+
+/* PORTFOLIO BUTTON */
+.btn-portfolio::before {
+  background-color: #1691bd;
+}
+.btn-portfolio::after {
+  background-color: #42a9cc;
+}
+
+/* CONTACT BUTTON */
+.btn-contact::before {
+  background-color: #166ba2;
+}
+.btn-contact::after {
+  background-color: #4589b8;
+}
+
+/* ------------------------------------------------------------------------
+ SLIDER SECTION
+ --------------------------------------------------------------------------*/
+
+ .slider {
+  display: flex;
+  width: 100em;
+  height: auto;
+  margin: .5em;
+ }
+ 
 
 /* ==========================================================================
    Helper classes
