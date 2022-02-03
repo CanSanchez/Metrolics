@@ -87,128 +87,199 @@ textarea {
    Author's custom styles
    ========================================================================== */
 html, body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header"
+  "hero hero hero hero"
+  "intro intro intro intro"
+  "main main main main"; */
 }
+
+
 
 /* ------------------------------------------------------------------------
  NAVIGATION BAR 
  --------------------------------------------------------------------------*/
 
 .page-header {
+  grid-area: header;
   display: flex;
-  width: 80em;
-  height: 10em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 12vh;
+  justify-content: center;
+  margin: 0;
+  background-color: white;
+}
+
+.logo img{
+  height: 12vh;
 }
 
 .main-nav {
   display: flex;
-  width: 70em;
-  height: 10em;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  align-content: center;
 }
 
-.btn {
+.main-nav__item{
+  width: 25%;
   display: flex;
-  width: 10em;
   flex-direction: column;
-  align-items: center;
-  padding: 1.3em 1em .5em 1em;
+  text-decoration: none;
 }
 
-.btn::after {
-  content: " ";
-  display: block;
-  background-color: rgb(63, 209, 63);
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  position: absolute;
-  top: 1.7em;
-  z-index: -1;
+.main-nav__item__text {
+  color: whitesmoke;
+  position: relative;
+  bottom: -4em;
+  left: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-.btn::before {
+.main-nav__item--home {
+  background-color: #25c389;
+}
+
+.main-nav__item--pages {
+  background-color: #ffb901;
+}
+
+.main-nav__item--blog {
+  background-color: #de6262;
+}
+
+.main-nav__item--portfolio {
+  background-color: #25c389;
+}
+
+.main-nav__item--contact {
+  background-color: #1691bd;
+}
+
+.fa, .fas {
+  color: whitesmoke;
+  align-self: center;
+}
+
+/* .main-nav__item>i::after {
   content: " ";
   display: block;
   background-color: green;
-  width: 12em;
-  height: 10.5em;
+  width: 2em;
+  height: 2em;
   position: absolute;
-  top: 0em;
+  top: 1em;
+  border-radius: 50%;
   z-index: -1;
+}  */
+
+/* ------------------------------------------------------------------------
+ HERO AREA
+ --------------------------------------------------------------------------*/
+.hero-area {
+  grid-area: hero;
+  display: flex;
+  width: 100vw;
+  height: 45vh;
+  margin: 0%;
+  padding: 0%;
+  background-image: url("banner-img.png");
+  /* overflow: hidden; */
 }
 
-.btn p {
-  align-self: flex-start;
-  margin: 5em 0 0 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
+.slider {
+  /* position: relative; */
+  width: 100%;
+  left: 0%;
+  margin: 0%;
+  background-image: url("banner-img.png")s;
 }
 
-.btn i {
-  margin: 2em 0 0 0;
+/* .hero-area img {
+  width: 100vw;
+  height: auto;
+} */
+
+.slider__slides {
+  display: flex;
+  list-style-type: none;
+  padding: 0%;
 }
 
-.fas {
-  color: white
+.slide__link {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* HOME BUTTON */
-.btn-home::before {
-  background-color: #25c389;
-}
-.btn-home::after {
-  background-color: #56caa3;
-}
-
-/* PAGE BUTTON */
-.btn-pages::before {
-  background-color: #ffb901;
-}
-.btn-pages::after {
-  background-color: #ffc634;
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: relative;
+  top: -17em;
+  left: 5em;
 }
 
-/* BLOG BUTTON */
-.btn-blog::before {
-  background-color: #de6262;
-}
-.btn-blog::after {
-  background-color: #e78383;
-}
-
-/* PORTFOLIO BUTTON */
-.btn-portfolio::before {
-  background-color: #1691bd;
-}
-.btn-portfolio::after {
-  background-color: #42a9cc;
+.slide__info__item {
+  width: fit-content;
+  display: inline-block;
+  background-color: whitesmoke;
+  text-decoration: none;
+  padding: .5em;
+  margin: 1px;
 }
 
-/* CONTACT BUTTON */
-.btn-contact::before {
-  background-color: #166ba2;
+.slider-nav {
+  width: 97vw;
+  position: relative;
+  top: -22em;
+  left: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
-.btn-contact::after {
-  background-color: #4589b8;
+
+.slider-nav a {
+  text-decoration: none;
+}
+
+.hiddenlink {
+  visibility: hidden;
 }
 
 /* ------------------------------------------------------------------------
- SLIDER SECTION
+ HOMEPAGE INTRO
  --------------------------------------------------------------------------*/
 
- .slider {
-  display: flex;
-  width: 100em;
-  height: auto;
-  margin: .5em;
- }
- 
+.home-page-intro {
+  grid-area: intro;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.home-page-intro mark {
+  background-color: transparent;
+  color: #1691bd;
+}
+
+/* ------------------------------------------------------------------------
+ HOMEPAGE INTRO
+ --------------------------------------------------------------------------*/
+
+.page-content {
+  grid-area: main;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
