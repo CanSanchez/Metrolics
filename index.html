@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Metrolics</title>
-  <meta name="description" content="">
+  <meta name="description" content="Metrolics sports a responsive layout with a mobile layout.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -18,139 +18,190 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+  <script src="https://kit.fontawesome.com/fa2250126f.js" crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fafafa">
+  <script src="js/btn.js"></script>
 </head>
 
 <body>
-  <!-- Nav Bar -->
+  <!-- NAVIGATION BAR -->
   <header class="page-header">
-    <div class="page-nav">
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="#"><img src="/img/Metrolics-logo.png" alt="Metrolics Logo"></a>
-            </div>
-            <div class="btn-home">
-                <i class="material-icons">home</i>
-                <a href="#">Home</a>
-            </div>
-            <div class="btn-pages">
-                <i class="material-icons">assignment</i>
-                <a href="#">Pages</a>
-            </div>
-            <div class="btn-blog">
-              <i class="material-icons">dvr</i>
-                <a href="#">Blog</a>
-            </div>
-            <div class="btn-portfolio">
-                <i class="material-icons">label</i>
-                <a href="#">Portfolio</a>
-            </div>
-            <div class="btn-contact">
-                <i class="material-icons">mail</i>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
-        <!-- Slider -->
-        <div class="slider">
-            <div class="slider-nav"> 
-              <i class="material-icons">chevron left</i>
-            <i class="material-icons">chevron right</i>
-            </div> 
-            <div class="slider-content">
-            <h2 class="slider-text">Metro Style</h2>
-            <h2 class="slider-text">Retina Ready</h2>
-            <h2 class="slider-text">Responsive Design</h2>
-            </div> 
-            <div class="slider-image">
-              <img src="img/slider-img.png" alt="Minions floating">
-            </div>
-        </div>
-        <!-- Homepage Intro -->
-        <div class="home-page-intro">
-            <h1>
-              Hey guys! This is the Metrolics theme.<br>
-              It sports a responsive layout with a mobile layout.
-            </h1>
-        </div>
+    <div class="logo">
+      <img src="img/Metrolics-logo.png" alt="Metrolics Logo">
     </div>
+    <!-- HOME BUTTON -->
+    <nav class="main-nav">
+      <a href="#" class="main-nav__item main-nav__item--home main-nav__item--active">
+        <span class="main-nav__item__text">Home</span>
+          <!-- optional icon may also be solved with css only in which case 
+            the span.main-nav__item__text is not necessary -->
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </a>
+      <!-- PAGES BUTTON -->
+      <a href="#" class="main-nav__item main-nav__item--pages main-nav__item--active">
+        <span class="main-nav__item__text">Pages</span>
+        <i class="fa fa-sticky-note" aria-hidden="true"></i>
+      </a>
+      <!-- BLOG BUTTON -->
+      <a href="#" class="main-nav__item main-nav__item--blog main-nav__item--active">
+        <span class="main-nav__item__text">Blog</span>
+        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+      </a>
+       <!-- PORTFOLIO BUTTON -->
+       <a href="#" class="main-nav__item main-nav__item--portfolio main-nav__item--active">
+        <span class="main-nav__item__text">Portfolio</span>
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
+      </a>
+       <!-- CONTACT BUTTON -->
+      <a href="#" class="main-nav__item main-nav__item--contact main-nav__item--active">
+        <span class="main-nav__item__text">Contact</span>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+    </nav>
   </header>
+  <!-- HERO AREA -->
+  <div class="hero-area">
+    <div class="slider">
+        <ul class="slider__slides">
+            <li class="slide">
+                <a href="#" class="slide__link">
+                    <!-- <img src="img/banner-img.png" alt="slider alt" class="slide__img"> -->
+                    <ul class="slide__info">
+                        <li class="slide__info__item">Metro Style</li>
+                        <li class="slide__info__item">Retina Ready</li>
+                        <li class="slide__info__item">Responsive Design</li>
+                    </ul>
+                </a>
+            </li>
+            <!-- slide -->
+            <!-- <li class="slide">
+                <a href="#" class="slide__link">
+                    <img src="banner-img.jpg" alt="slider alt" class="slide__img">
+                    <ul class="slide__info">
+                        <li class="slide__info__item">Metro Style</li>
+                        <li class="slide__info__item">Retina Ready</li>
+                        <li class="slide__info__item">Responsive Design</li>
+                    </ul>>
+                </a>
+            </li> -->
+            <!-- slide -->
+        </ul>
+        <!-- SLIDES END -->
+        <div class="slider-nav">
+            <a href="#" class="slider-nav__btn-prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                <span class="hiddenlink">navigate to previous slide content</span><!-- for accessibility purposes -->
+            </a>
+            <a href="#" class="slider-nav__btn-next">
+              <span class="hiddenlink">navigate to next slide content</span><!-- for accessibility purposes -->
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- SLIDER END -->
+      </div>
+  </div>
+    <!-- HERO AREA END-->
+
+    <!-- HOMEPAGE INTRODUCTION -->
+    <div class="home-page-intro">
+        <h1>
+          Hey guys! This is the <mark>Metrolics</mark> theme.<br>
+          It sports a responsive layout with a mobile layout.
+        </h1>
+    </div>
 
   <main class="page-content">
-    <!-- Services Section -->
-    <section class="section-services">
-        <div class="">
-          <h2>Things That We Do</h2>
-          <p>Ask us what we can do for you</p>
-        </div>
-        <span>
-          <i></i>
-          <h3>Web Solutions</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </span>
-        <span>
-          <i></i>
-          <h3>Photography</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </span>
-        <span>
-          <i></i>
-          <h3>Web Development</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </span>
-        <span>
-          <i></i>
-          <h3>Web Design</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </span>
+    <!-- SERVICES SECTION -->
+    <section class="page__section page__section--services">
+      <header class="services__header">
+          <h2 class="heading section__heading section__heading--services">Things That We Do</h2>
+          <h4 class="tagline tagline--services">Ask us what we can do for you</h4>
+      </header>
+      <div>
+        <i></i>
+        <h3>Web Solutions</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+      </div>
+      <div>
+        <i></i>
+        <h3>Photography</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+      </div>
+      <div>
+        <i></i>
+        <h3>Web Development</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+      </div>
+      <div>
+        <i></i>
+        <h3>Web Design</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+      </div>
     </section>
-    <!-- Blog Section -->
-    <section class="section-blog">
-        <div class="section header">
-          <h2>What&#39s Up Lately?</h2>
-          <p>Read up on our latest work</p>
+    <!-- BLOG SECTION -->
+    <section class="page__section page__section--blog">
+      <header class="blog__header">
+          <h2 class="heading section__heading section__heading--blog">What&#39;s Up Lately?</h2>
+          <h4 class="tagline tagline--blog">Read up on our latest work</h4>
+      </header>
+      <!-- Blog Entry 1 -->
+      <div class="blog-entry">
+        <div class="entry-date">
+          Entry Date
         </div>
-        <div class="blog-entry">
-          <div class="entry-date">
-            Entry Date
-          </div>
-          <div class="entry-description">
+      </div>
+      <div class="entry-description">
+          Lorem Ipsum
+      </div>
+      <div class="entry-image">
+        <img src="img/sample-image-post.png" alt="blog entry">
+      </div>
+            <!-- Blog Entry 2 -->
+      <div class="blog-entry">
+        <div class="entry-date">
+          Entry Date
+        </div>
+      </div>
+      <div class="entry-description">
             Lorem Ipsum
-          </div>
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="blog entry">
-          </div>
-          <div class="blog-entry">
-            <div class="entry-date">
-              Entry Date
-            </div>
-            <div class="entry-description">
-              Lorem Ipsum
-            </div>
-            <div class="entry-image">
-              <img src="/img/sample-image-post.png" alt="blog entry">
-            </div>
-            <div class="blog-entry">
-              <div class="entry-date">
-                Entry Date
-              </div>
-              <div class="entry-description">
-                Lorem Ipsum
-              </div>
-              <div class="entry-image">
-                <img src="/img/sample-image-post.png" alt="blog entry">
-              </div>
+      </div>
+      <div class="entry-image">
+        <img src="img/sample-image-post.png" alt="blog entry">
+      </div>
+            <!-- Blog Entry 3 -->
+      <div class="blog-entry">
+        <div class="entry-date">
+          Entry Date
         </div>
+        <div class="entry-description">
+          Lorem Ipsum
+        </div>
+        <div class="entry-image">
+          <img src="img/sample-image-post.png" alt="blog entry">
+        </div>
+      </div>
     </section>
-  </main>
-  <!-- Latest Projects Section -->
-  <section class="section-latest-projects">
-    <div class="section-header">
-      <h2>Our Latest Projects</h2>
-      <p>Client happy? We are happy.</p>
-    </div>
-    <div class="project-item">
+    <!-- BLOG SECTION END -->
+
+     <!-- PROJECT SECTION-->
+    <section class="section-latest-projects">
+      <div class="section-header">
+        <h2>Our Latest Projects</h2>
+        <p>Client happy? We are happy.</p>
+      </div>
+      <div class="project-item">
+        <div class="entry-image">
+          <img src="/img/sample-image-post.png" alt="">
+        </div>
+          <!-- hover -->
+        <div class="project-description">
+          <h4>Project Title</h4>
+          <p>Lorem Ipsum</p>
+          <i>Entry Icon</i>
+          <div class="bg-entry-description"></div>
+        </div>
+      </div>
+      <div class="project-item">
         <div class="entry-image">
           <img src="/img/sample-image-post.png" alt="">
         </div>
@@ -161,128 +212,131 @@
           <i>Entry Icon</i>
           <div class="bg-entry-description"></div>
         </div>
-    </div>
-    <div class="project-item">
-      <div class="entry-image">
-        <img src="/img/sample-image-post.png" alt="">
       </div>
-      <!-- hover -->
-      <div class="project-description">
-        <h4>Project Title</h4>
-        <p>Lorem Ipsum</p>
-        <i>Entry Icon</i>
-        <div class="bg-entry-description"></div>
+      <div class="project-item">
+        <div class="entry-image">
+          <img src="/img/sample-image-post.png" alt="">
+        </div>
+        <!-- hover -->
+        <div class="project-description">
+          <h4>Project Title</h4>
+          <p>Lorem Ipsum</p>
+          <i>Entry Icon</i>
+          <div class="bg-entry-description"></div>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <div class="entry-image">
-        <img src="/img/sample-image-post.png" alt="">
+      <div class="project-item">
+        <div class="entry-image">
+          <img src="/img/sample-image-post.png" alt="">
+        </div>
+        <!-- hover -->
+        <div class="project-description">
+          <h4>Project Title</h4>
+          <p>Lorem Ipsum</p>
+          <i>Entry Icon</i>
+          <div class="bg-entry-description"></div>
+        </div>
       </div>
-      <!-- hover -->
-      <div class="project-description">
-        <h4>Project Title</h4>
-        <p>Lorem Ipsum</p>
-        <i>Entry Icon</i>
-        <div class="bg-entry-description"></div>
+      <div class="project-item">
+        <div class="entry-image">
+          <img src="/img/sample-image-post.png" alt="">
+        </div>
+        <!-- hover -->
+        <div class="project-description">
+          <h4>Project Title</h4>
+          <p>Lorem Ipsum</p>
+          <i>Entry Icon</i>
+          <div class="bg-entry-description"></div>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <div class="entry-image">
-        <img src="/img/sample-image-post.png" alt="">
+      <div class="project-item">
+        <div class="entry-image">
+          <img src="/img/sample-image-post.png" alt="">
+        </div>
+        <!-- hover -->
+        <div class="project-description">
+          <h4>Project Title</h4>
+          <p>Lorem Ipsum</p>
+          <i>Entry Icon</i>
+          <div class="bg-entry-description"></div>
+        </div>
       </div>
-      <!-- hover -->
-      <div class="project-description">
-        <h4>Project Title</h4>
-        <p>Lorem Ipsum</p>
-        <i>Entry Icon</i>
-        <div class="bg-entry-description"></div>
-      </div>
-    </div>
-    <div class="project-item">
-      <div class="entry-image">
-        <img src="/img/sample-image-post.png" alt="">
-      </div>
-      <!-- hover -->
-      <div class="project-description">
-        <h4>Project Title</h4>
-        <p>Lorem Ipsum</p>
-        <i>Entry Icon</i>
-        <div class="bg-entry-description"></div>
-      </div>
-    </div>
-    <div class="project-item">
-      <div class="entry-image">
-        <img src="/img/sample-image-post.png" alt="">
-      </div>
-      <!-- hover -->
-      <div class="project-description">
-        <h4>Project Title</h4>
-        <p>Lorem Ipsum</p>
-        <i>Entry Icon</i>
-        <div class="bg-entry-description"></div>
-      </div>
-    </div>
-  </section>
-  
-  <div class="container">
-    <h2>Sponsors Section</h2>
-      <section class="sponsors-logos"
-      <img src="img/logo 1.png">
-      <img src="img/logo 2.png">
-      <img src="img/logo 3.png">
-      <img src="img/logo 4.png">
-      <img src="img/logo 5.png">
-</section>
-</div>
+    </section>
+    <!-- PROJECT SECTION END -->
 
+    <!-- ACCORDION SECTION -->
+    <div>
+      <header class="accordion__header">
+        <h2 class="heading section__heading section__heading--accordion">What&#39;s Up Lately?</h2>
+        <h4 class="tagline tagline--accordion">Read up on our latest work</h4>
+      </header>
+      <img src="img/accordion.png" alt="Things of the above">
+    </div>
+    <!-- ACCORDION SECTION END -->
+
+    <!-- SPONSORS SECTION -->
+    <div class="sponsor_container">
+      <h2>Sponsors Section</h2>
+        <div class="sponsors-logos">
+        <img src="img/logo1.png" alt="Netbeans Logo">
+        <img src="img/logo2.png" alt="Krita Logo">
+        <img src="img/logo3.png" alt="Scirra Logo">
+        <img src="img/logo4.png" alt="Blender Logo">
+        <img src="img/logo5.png" alt="Inkscape Logo">
+    </div>
+    <!-- SPONSORS SECTION END -->
+    </div>
+  </main>
+  
+   <!-- FOOTER SECTION -->  
   <footer>
     <div class="container">
-        <div class="Content topp">
-            <img src="img/Peewee Herman.jpeg">
-            <p>Peewee Herman</p>
-            <a>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer and front-end developper. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a desigigner and studio manager for a design house who boasted a number of big name clients </a>
+      <!-- Peewee Herman -->
+        <div class="Content top">
+            <img src="img/PeeweeHerman.jpeg" alt="Peewee Herman Portrait"> 
+            <p class="author_name">Peewee Herman</p>
+            <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer and front-end developper. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a desigigner and studio manager for a design house who boasted a number of big name clients </p>
         </div>
-        <div class="Content main">
-        <div class="Content about">
-            <h2>About Us</h2>
+        <div class="footer_main">
+        <div class="footer_content about">
+          <h3 class="heading footer__column__heading inverted">About Us</h3>
             <a>Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt</a>
             <ul class="social-icon">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-google"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
             </ul>
         </div>
-        <div class="Content Photo">
-            <h2>Flickr Photos</h2>
-            <img src="img/Minions 1.jpeg">
-            <img src="img/Minions 2.jpeg">
-            <img src="img/Minions 3.jpeg">
-            <img src="img/Minions 4.jpeg">
-            <img src="img/Minons 5.png">
-            <img src="img/Minions 6.png">
+        <div class="footer_content flickrphotos">
+          <h3 class="heading footer__column__heading inverted">Flickr Photos</h3>
+            <img src="img/Minions1.jpeg" alt="Minion 1">
+            <img src="img/Minions2.jpeg" alt="Minion 2">
+            <img src="img/Minions3.jpeg" alt="Minion 3">
+            <img src="img/Minions4.jpeg" alt="Minion 4">
+            <img src="img/Minons5.png" alt="Minion 5">
+            <img src="img/Minions6.png" alt="Minion 6">
         </div>
-        <div class="Content Recent">
-            <h2>Recent Tweets</h2>   
+        <div class="footer_content recenttweets">
+          <h3 class="heading footer__column__heading inverted">Recent Tweets</h3>   
         </div>
-        <div class="Content Newsletter">
-            <h2>Newsletter</h2>
+        <div class="footer_conten newsletter">
+          <h3 class="heading footer__column__heading inverted">Newsletter</h3>
             <a>Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh
             </a>
-            <div class="email">
-                <form action="" method="get" class="search">
+            <div class="contact_email">
+                <form action="#" method="get" class="search">
                   <div class="form__field">
                     <input type="email" name="email" placeholder="Enter your Email..." class="form__input">
                     <input type="submit" value="Send" class="send" >
                   </div>
                 </form>
-            
-              </div>  
+            </div>  
         </div>
     </div>
     </div>
-</footer>
+</footer> -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
