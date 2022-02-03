@@ -89,15 +89,15 @@ textarea {
 html, body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* display: flex;
+  flex-direction: column; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
   "header header header header"
   "hero hero hero hero"
   "intro intro intro intro"
-  "main main main main"; */
+  "main main main main";
 }
 
 
@@ -112,8 +112,8 @@ html, body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 12vh;
+  width: 100%;
+  height: 12%;
   justify-content: center;
   margin: 0;
   background-color: white;
@@ -188,26 +188,28 @@ html, body {
 .hero-area {
   grid-area: hero;
   display: flex;
-  width: 100vw;
-  height: 45vh;
-  margin: 0%;
+  width: 100%;
+  height: 50%;
+  margin-top: 6%;
   padding: 0%;
-  background-image: url("banner-img.png");
-  /* overflow: hidden; */
+  background-image: url(banner.png);
+  background-repeat: round;
+  
+  overflow: hidden;
 }
 
 .slider {
+  display: flex;
   /* position: relative; */
   width: 100%;
   left: 0%;
   margin: 0%;
-  background-image: url("banner-img.png")s;
 }
 
-/* .hero-area img {
+.hero-area img {
   width: 100vw;
   height: auto;
-} */
+}
 
 .slider__slides {
   display: flex;
@@ -225,9 +227,7 @@ html, body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  position: relative;
-  top: -17em;
-  left: 5em;
+  justify-items: baseline;
 }
 
 .slide__info__item {
@@ -240,12 +240,10 @@ html, body {
 }
 
 .slider-nav {
-  width: 97vw;
-  position: relative;
-  top: -22em;
-  left: 0;
+  width: 98.5%;
   padding: 1em;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -266,6 +264,8 @@ html, body {
   width: 100vw;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 2em;
+  margin: 1em;
 }
 
 .home-page-intro mark {
@@ -279,7 +279,61 @@ html, body {
 
 .page-content {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.section__heading {
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  text-align: center;
+  margin: .3em;
+}
+
+.tagline {
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  text-align:center;
+  font-weight: lighter;
+  margin: .3em;
+}
+
+.page__section--container {
+  display: flex;
+  margin: 1em;
+}
+
+.blog-entry {
+  display: flex;
+}
+
+.fa-lightbulb, .fa-image {
+  color: #1691bd;
+}
+
+.sponsor_container {
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  display: grid;
+}
+
+footer img {
+  width: 3em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
