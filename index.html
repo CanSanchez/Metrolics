@@ -23,49 +23,59 @@
   <script src="js/btn.js"></script>
 </head>
 
-<body>
+<body class="page page-home">
   <!-- NAVIGATION BAR -->
-  <header class="page-header">
-    <div class="logo">
-      <img src="img/Metrolics-logo.png" alt="Metrolics Logo">
-    </div>
+  <header class="page__header">
+    <div class="row m-1-2">
+      <div class="logo">
+        <img src="img/Metrolics-logo.png" alt="Metrolics Logo">
+      </div>
     <!-- HOME BUTTON -->
-    <nav class="main-nav">
-      <a href="#" class="main-nav__item main-nav__item--home main-nav__item--active">
-        <span class="main-nav__item__text">Home</span>
-          <!-- optional icon may also be solved with css only in which case 
-            the span.main-nav__item__text is not necessary -->
-        <i class="fa fa-home" aria-hidden="true"></i>
-      </a>
-      <!-- PAGES BUTTON -->
-      <a href="#" class="main-nav__item main-nav__item--pages main-nav__item--active">
-        <span class="main-nav__item__text">Pages</span>
-        <i class="fa fa-sticky-note" aria-hidden="true"></i>
-      </a>
-      <!-- BLOG BUTTON -->
-      <a href="#" class="main-nav__item main-nav__item--blog main-nav__item--active">
-        <span class="main-nav__item__text">Blog</span>
-        <i class="fa fa-bullhorn" aria-hidden="true"></i>
-      </a>
-       <!-- PORTFOLIO BUTTON -->
-       <a href="#" class="main-nav__item main-nav__item--portfolio main-nav__item--active">
-        <span class="main-nav__item__text">Portfolio</span>
-        <i class="fa fa-briefcase" aria-hidden="true"></i>
-      </a>
-       <!-- CONTACT BUTTON -->
-      <a href="#" class="main-nav__item main-nav__item--contact main-nav__item--active">
-        <span class="main-nav__item__text">Contact</span>
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-    </nav>
+      <nav class="main-nav column">
+        <a href="#" class="main-nav__item main-nav--home main-nav--active">
+            Home
+            <!-- optional icon may also be solved with css only in which case 
+              the span.main-nav__text is not necessary -->
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+        <!-- PAGES BUTTON -->
+        <a href="#" class="main-nav__item main-nav--pages main-nav--active">
+          Pages
+          <i class="fa fa-sticky-note" aria-hidden="true"></i>
+        </a>
+        <!-- BLOG BUTTON -->
+        <a href="#" class="hmain-nav__item main-nav--blog main-nav--active">
+          Blog
+          <i class="fa fa-bullhorn" aria-hidden="true"></i>
+        </a>
+        <!-- PORTFOLIO BUTTON -->
+        <a href="#" class="main-nav main-nav--portfolio main-nav--active">
+          Portfolio
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+        </a>
+        <!-- CONTACT BUTTON -->
+        <a href="#" class="main-nav main-nav--contact main-nav--active">
+          Contact
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
   </header>
-  <!-- HERO AREA -->
-  <div class="hero-area">
+
+  <div class="page__slider">
+    <div class="row">
+       <div class="column">
+        <img src="img/sliderimg.png" alt="slider image" class="slide__img">
+       </div>
+    </div>
+  </div>
+  <!--  Alternate HERO AREA -->
+  <!-- <div class="page__slider">
     <div class="slider">
         <ul class="slider__slides">
             <li class="slide">
                 <a href="#" class="slide__link">
-                    <!-- <img src="banner-img.png" alt="slider alt" class="slide__img"> -->
+                  <img src="banner-img.png" alt="slider alt" class="slide__img">
                     <ul class="slide__info">
                         <li class="slide__info__item">Metro Style</li>
                         <li class="slide__info__item">Retina Ready</li>
@@ -73,235 +83,241 @@
                     </ul>
                 </a>
             </li>
-            <!-- slide -->
-            <!-- <li class="slide">
-                <a href="#" class="slide__link">
-                    <img src="banner-img.jpg" alt="slider alt" class="slide__img">
-                    <ul class="slide__info">
-                        <li class="slide__info__item">Metro Style</li>
-                        <li class="slide__info__item">Retina Ready</li>
-                        <li class="slide__info__item">Responsive Design</li>
-                    </ul>>
-                </a>
-            </li> -->
-            <!-- slide -->
-        </ul>
-        <!-- SLIDES END -->
-        <div class="slider-nav">
+        </ul> -->
+<!-- SLIDES END -->
+        <!-- <div class="slider-nav">
             <a href="#" class="slider-nav__btn-prev">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                <span class="hiddenlink">navigate to previous slide content</span><!-- for accessibility purposes -->
+                <span class="hiddenlink">navigate to previous slide content</span> for accessibility purposes 
             </a>
             <a href="#" class="slider-nav__btn-next">
-              <span class="hiddenlink">navigate to next slide content</span><!-- for accessibility purposes -->
+              <span class="hiddenlink">navigate to next slide content</span> for accessibility purposes 
                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </a>
-        </div>
-        <!-- SLIDER END -->
-      </div>
-  </div>
-    <!-- HERO AREA END-->
+        </div> -->
+  
+<!-- SLIDER END -->
+      <!-- </div>
+  </div> -->
+    <!-- HERO AREA END--> 
+ 
 
     <!-- HOMEPAGE INTRODUCTION -->
-    <div class="home-page-intro">
-        <h1>
+    <div class="page__intro">
+      <div class="row">
+        <h1 class="heading">
           Hey guys! This is the <mark>Metrolics</mark> theme.<br>
           It sports a responsive layout with a mobile layout.
         </h1>
+      </div>
     </div>
 
   <main class="page-content">
     <!-- SERVICES SECTION -->
     <section class="page__section page__section--services">
-      <header class="services__header">
-          <h2 class="heading section__heading section__heading--services">Things That We Do</h2>
-          <h4 class="tagline tagline--services">Ask us what we can do for you</h4>
-      </header>
-      <div class="page__section--container">
-        <div>
-          <i class="fa fa-lightbulb"></i>
-          <h3>Web Solutions</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+      <div class="row l-col-4">
+        <div class="column services__header span-full">
+            <h2 class="heading section__heading section__heading--services">Things That We Do</h2>
+            <h4 class="tagline tagline--services">Ask us what we can do for you</h4>
         </div>
-        <div>
-          <i class="fa fa-image"></i>
-          <h3>Photography</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+          <div class="column">
+            <i class="fa fa-lightbulb"></i>
+            <h3 class="services_heading">Web Solutions</h3>
+            <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+          </div>
+          <div class="column">
+            <i class="fa fa-image"></i>
+            <h3 class="services_heading">Photography</h3>
+            <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+          </div>
+          <div class="column"> 
+            <i class="fa fa-gears"></i>
+            <h3 class="services_heading">Web Development</h3>
+            <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+          </div>
+          <div class="column">
+            <i class="fa fa-pencil"></i>
+            <h3 class="services_heading">Web Design</h3>
+            <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+          </div>
         </div>
-        <div>
-          <i></i>
-          <h3>Web Development</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </div>
-        <div>
-          <i></i>
-          <h3>Web Design</h3>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
-        </div>
-      </div>
     </section>
     <!-- BLOG SECTION -->
     <section class="page__section page__section--blog">
-      <header class="blog__header">
-          <h2 class="heading section__heading section__heading--blog">What&#39;s Up Lately?</h2>
-          <h4 class="tagline tagline--blog">Read up on our latest work</h4>
-      </header>
-      <div class="page__section--container">
-      <!-- Blog Entry 1 -->
-        <div class="blog-entry">
-          <div class="entry-date">
-            Entry Date
-          </div>
+      <div class="row m-col-2 l-col-3">
+        <div class="column blog__header span-full">
+            <h2 class="heading section__heading section__heading--blog">What&#39;s Up Lately?</h2>
+            <h4 class="tagline tagline--blog">Read up on our latest work</h4>
         </div>
-        <div class="entry-description">
-            Lorem Ipsum
+        
+        <!-- Blog Entry 1 -->
+          <div class="column blog-entry s-span-full">
+            <div class="entry-date">
+              Entry Date
+            </div>
+            <figure class="entry-image">
+              <img src="img/sample-image-post.png" alt="blog entry">
+              <figcaption>
+                <h3 class="heading">Sample image post</h3>
+              </figcaption>
+            </figure> 
+          </div>  <!-- Blog Entry 1 ends here -->
+                  <!-- Blog Entry 2 -->
+          <div class="column blog-entry">
+            <div class="entry-date">
+              Entry Date
+            </div>
+            <figure class="entry-image">
+              <img src="img/sample-image-post.png" alt="blog entry">
+              <figcaption>
+                <h3 class="heading">Sample image post</h3>
+              </figcaption>
+            </figure> 
+          </div>  <!-- Blog Entry 2 ends here -->
+          <!-- Blog Entry 3 -->
+          <div class="column blog-entry">
+            <div class="entry-date">
+              Entry Date
+            </div>
+            <figure class="entry-image">
+              <img src="img/sample-image-post.png" alt="blog entry">
+              <figcaption>
+                <h3 class="heading">Sample image post</h3>
+              </figcaption>
+            </figure> 
+          </div>  <!-- Blog Entry 3 ends here -->
         </div>
-        <div class="entry-image">
-          <img src="img/sample-image-post.png" alt="blog entry">
-        </div>
-              <!-- Blog Entry 2 -->
-        <div class="blog-entry">
-          <div class="entry-date">
-            Entry Date
-          </div>
-        </div>
-        <div class="entry-description">
-              Lorem Ipsum
-        </div>
-        <div class="entry-image">
-          <img src="img/sample-image-post.png" alt="blog entry">
-        </div>
-              <!-- Blog Entry 3 -->
-        <div class="blog-entry">
-          <div class="entry-date">
-            Entry Date
-          </div>
-          <div class="entry-description">
-            Lorem Ipsum
-          </div>
-          <div class="entry-image">
-            <img src="img/sample-image-post.png" alt="blog entry">
-          </div>
-        </div>
-      </div>
     </section>
     <!-- BLOG SECTION END -->
 
      <!-- PROJECT SECTION-->
      <section class="page__section page__section--projects">
-      <header class="projects__header">
-          <h2 class="heading section__heading section__heading--projects">Our Latest Projects</h2>
-          <h4 class="tagline tagline--projects">Client happy? We are happy</h4>
-      </header>
-      <div class=".page__section--container">
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-            <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
+      <div class="row m-col-2 l-col-3">
+        <div class="column project__header span-full">
+            <h2 class="heading section__heading section__heading--projects">Our Latest Projects</h2>
+            <h4 class="tagline tagline--projects">Client happy? We are happy</h4>
         </div>
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-          <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-          <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-          <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-          <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="entry-image">
-            <img src="/img/sample-image-post.png" alt="">
-          </div>
-          <!-- hover -->
-          <div class="project-description">
-            <h4>Project Title</h4>
-            <p>Lorem Ipsum</p>
-            <i>Entry Icon</i>
-            <div class="bg-entry-description"></div>
-          </div>
-        </div>
+        <!-- Project 1 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 1 ends here-->
+        <!-- Project 2 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 2 ends here-->
+        <!-- Project 3 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 3 ends here-->
+        <!-- Project 4 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 4 ends here-->
+        <!-- Project 5 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 5 ends here-->
+        <!-- Project 6 -->
+        <div class="column project-entry">
+          <figure class="entry-image">
+            <img src="img/sample-image-post.png" alt="project entry">
+            <figcaption>
+              <h3 class="heading">Sample image post</h3>
+            </figcaption>
+          </figure> 
+        </div> <!-- Project 6 ends here-->
       </div>
     </section>
     <!-- PROJECT SECTION END -->
 
     <!-- ACCORDION SECTION -->
-    <div>
-      <header class="accordion__header">
-        <h2 class="heading section__heading section__heading--accordion">What&#39;s Up Lately?</h2>
-        <h4 class="tagline tagline--accordion">Read up on our latest work</h4>
-      </header>
-      <img src="img/accordion.png" alt="Things of the above">
-    </div>
+    <section class="accordion">
+      <div class="row l-col-2">
+        <div class="column accordion__header span-full">
+          <h2 class="heading section__heading section__heading--accordion">Things of above</h2>
+          <h4 class="tagline tagline--accordion">Misc stuff we could not place anyplace else</h4>
+        </div>
+        <div class="column accordion__img">
+          <img src="img/accordion.png" alt="Things of the above">
+        </div>
+      </div>
+    </section>
     <!-- ACCORDION SECTION END -->
 
     <!-- SPONSORS SECTION -->
-    <div class="sponsor_container">
-        <img src="img/logo1.png" alt="Netbeans Logo">
-        <img src="img/logo2.png" alt="Krita Logo">
-        <img src="img/logo3.png" alt="Scirra Logo">
-        <img src="img/logo4.png" alt="Blender Logo">
-        <img src="img/logo5.png" alt="Inkscape Logo">
-    </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <!-- Peewee Herman -->
-        <div class="Content top">
-            <img src="img/PeeweeHerman.jpeg" alt="Peewee Herman Portrait"> 
-            <p class="author_name">Peewee Herman</p>
-            <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer and front-end developper. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a desigigner and studio manager for a design house who boasted a number of big name clients </p>
+    <div class="sponsor">
+      <div class="row m-col-5"> 
+        <!-- sponsor 1 -->
+        <div class="column accordion__img">
+          <img src="img/logo1.png" alt="Netbeans Logo">
         </div>
-        <div class="footer_main">
-        <div class="footer_content about">
+      <!-- sponsor 2 -->
+        <div class="column accordion__img">
+          <img src="img/logo2.png" alt="Krita Logo">
+        </div>
+      <!-- sponsor 3 -->
+        <div class="column accordion__img">
+          <img src="img/logo3.png" alt="Scirra Logo">
+        </div>
+      <!-- sponsor 4 -->
+        <div class="column accordion__img">
+          <img src="img/logo3.png" alt="Scirra Logo">
+        </div>
+      <!-- sponsor 5 -->
+        <div class="column accordion__img">
+          <img src="img/logo5.png" alt="Inkscape Logo">
+        </div>
+      </div>
+    </div>
+</main>
+
+  <footer class="page__footer">
+    <div class="row m-col-2 l-col-4">
+      <!-- Peewee Herman -->
+        <div class="page_footer__intro column span-full">
+          <figure>
+            <img src="img/PeeweeHerman.jpeg" alt="Peewee Herman Portrait">
+          </figure>
+          <div>
+            <h3 class="heading">
+              Peewee Herman
+            </h3>
+            <p>
+              Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer and front-end developper. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a desigigner and studio manager for a design house who boasted a number of big name clients 
+            </p>
+          </div> 
+        </div>
+        <div class="footer_about column">
           <h3 class="heading footer__column__heading inverted">About Us</h3>
-            <a>Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt</a>
+            <p>
+              Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt
+            </p>
             <ul class="social-icon">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-google"></i></a></li>
@@ -310,22 +326,37 @@
                 <li><a href="#"><i class="fa fa-rss"></i></a></li>
             </ul>
         </div>
-        <div class="footer_content flickrphotos">
-          <h3 class="heading footer__column__heading inverted">Flickr Photos</h3>
-            <img src="img/Minions1.jpeg" alt="Minion 1">
-            <img src="img/Minions2.jpeg" alt="Minion 2">
-            <img src="img/Minions3.jpeg" alt="Minion 3">
-            <img src="img/Minions4.jpeg" alt="Minion 4">
-            <img src="img/Minons5.png" alt="Minion 5">
-            <img src="img/Minions6.png" alt="Minion 6">
+        <div class="footer_flicker column">
+          <h3 class="heading footer__column__heading inverted">
+            Flickr Photos
+          </h3>
+            <figure>
+              <img src="img/Minions1.jpeg" alt="Minion 1">
+            </figure>
+            <figure>
+              <img src="img/Minions2.jpeg" alt="Minion 2">
+            </figure>
+            <figure>
+              <img src="img/Minions3.jpeg" alt="Minion 3">
+            </figure>
+            <figure>
+              <img src="img/Minions4.jpeg" alt="Minion 4">
+            </figure>
+            <figure>
+              <img src="img/Minons5.png" alt="Minion 5">
+            </figure>
+            <figure>
+              <img src="img/Minions6.png" alt="Minion 6">
+            </figure>
         </div>
-        <div class="footer_content recenttweets">
+        <div class="footer_tweets column">
           <h3 class="heading footer__column__heading inverted">Recent Tweets</h3>   
         </div>
-        <div class="footer_conten newsletter">
+        <div class="footer_newsletter column">
           <h3 class="heading footer__column__heading inverted">Newsletter</h3>
-            <a>Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh
-            </a>
+            <p>
+              Minios ipsum potatoooo potatoooo uuuhhh. Chasy pouulet tikka masala jiji wiiii hahaha po kass tulaiiiooo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do bee do po kass wiiii butt chasy. Pepete uuuhhh
+            </p>
             <div class="contact_email">
                 <form action="#" method="get" class="search">
                   <div class="form__field">
@@ -336,8 +367,7 @@
             </div>  
         </div>
     </div>
-    </div>
-</footer> -->
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
