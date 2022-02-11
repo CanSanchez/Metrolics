@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap">
   <script src="https://kit.fontawesome.com/fa2250126f.js" crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fafafa">
   <script src="js/btn.js"></script>
@@ -27,42 +28,38 @@
   <!-- NAVIGATION BAR -->
   <header class="page__header">
     <div class="row m-1-2">
-      <div class="logo">
-        <img src="img/Metrolics-logo.png" alt="Metrolics Logo">
+      <nav class="mobile-nav m-hide l-hide">
+        mobile menu
+      </nav>
+      <div class="column">
+        <img class="logo" src="img/Metrolics-logo.png" alt="Metrolics Logo">
       </div>
     <!-- HOME BUTTON -->
       <nav class="main-nav column">
         <a href="#" class="main-nav__item main-nav--home main-nav--active">
             Home
-            <!-- optional icon may also be solved with css only in which case 
-              the span.main-nav__text is not necessary -->
-          <i class="fa fa-home" aria-hidden="true"></i>
         </a>
         <!-- PAGES BUTTON -->
         <a href="#" class="main-nav__item main-nav--pages main-nav--active">
           Pages
-          <i class="fa fa-sticky-note" aria-hidden="true"></i>
         </a>
         <!-- BLOG BUTTON -->
-        <a href="#" class="hmain-nav__item main-nav--blog main-nav--active">
+        <a href="#" class="main-nav__item main-nav--blog main-nav--active">
           Blog
-          <i class="fa fa-bullhorn" aria-hidden="true"></i>
         </a>
         <!-- PORTFOLIO BUTTON -->
-        <a href="#" class="main-nav main-nav--portfolio main-nav--active">
+        <a href="#" class="main-nav__item main-nav--portfolio main-nav--active">
           Portfolio
-          <i class="fa fa-briefcase" aria-hidden="true"></i>
         </a>
         <!-- CONTACT BUTTON -->
-        <a href="#" class="main-nav main-nav--contact main-nav--active">
+        <a href="#" class="main-nav__item main-nav--contact main-nav--active">
           Contact
-          <i class="fa fa-envelope" aria-hidden="true"></i>
         </a>
       </nav>
     </div>
   </header>
 
-  <div class="page__slider">
+  <div class="page__slider s-hide">
     <div class="row">
        <div class="column">
         <img src="img/sliderimg.png" alt="slider image" class="slide__img">
