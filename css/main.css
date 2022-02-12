@@ -647,9 +647,9 @@ width: 50%
     margin-bottom: 10%;
   }
  .page__footer .footer_flicker.column div figure img{
-width: 60px;
-height: 60px;
-margin: 5px;
+width: 80px;
+height: 80px;
+margin: 0px;
   }
   .page__footer .footer_flicker.column h3:before{
     content: '';
@@ -854,8 +854,8 @@ margin-left: 10%;
 
 .footer_flicker.column div{
 display: grid;
-grid-template-columns: repeat(3, 80px);
-grid-template-rows: repeat(3, auto);
+grid-template-columns: repeat(3, 90px);
+grid-template-rows: repeat(3, 90px);
 }
 
 .footer_flicker.column div figure{
@@ -863,15 +863,19 @@ grid-template-rows: repeat(3, auto);
 }
 .footer_tweets.column i{
   color: gainsboro;
+  margin: 5px;
 }
 
 .footer_tweets.column div{
   display: flex;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+
 }
-.footer_tweets.column div p{
+.footer_tweets.column div a{
   color: white;
 }
-.footer_tweets.column div p1{
+.footer_tweets.column div a1{
   color: #55ACEE;
 }
 
@@ -888,4 +892,8 @@ grid-template-rows: repeat(3, auto);
 
 .form__field button i{
   color: white;
+}
+
+.heading.footer__column__heading.inverted{
+text-align: left;
 }
